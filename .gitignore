@@ -2,3 +2,9 @@
 node_modules/*
 package-lock.json
 package.json
+
+# oh-my-zsh custom symlink
+.oh-my-zsh
+
+# mac..
+.DS_Store
