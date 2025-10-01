@@ -1,16 +1,17 @@
 require('plugins')
-require('telescope_config')
-require('trouble_setup')
-require('telekasten_config')
-require('color_themes')
-require('lan_server_setup')
-require('snippets_setup')
-require('dap_config')
--- require('jupyter_setup')
-require('gitsigns_setup')
-require('mappings')
-require('toggleterm_config')
-require('nvim-highlight-colors').setup {}
+require('maps')
+-- require('telescope_config')
+-- require('trouble_setup')
+-- require('telekasten_config')
+-- require('color_themes')
+-- require('lan_server_setup')
+-- require('snippets_setup')
+-- require('dap_config')
+-- -- require('jupyter_setup')
+-- require('gitsigns_setup')
+-- require('mappings')
+-- require('toggleterm_config')
+-- require('nvim-highlight-colors').setup {}
 
 -- old init vim.opt.tent
 -- use https://icyphox.sh/blog/nvim-lua/ for vim.opt.lua reference
