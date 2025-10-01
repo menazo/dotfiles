@@ -30,9 +30,8 @@
   - ~/.config/nvim/.nvim-venv/bin/pip install -U pip
   - ~/.config/nvim/.nvim-venv/bin/pip install -U pip-tools
   - ~/.config/nvim/.nvim-venv/bin/pip-sync .config/nvim/nvim-requirements.txt
-  - git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-  # - nvim --headless -c 'so .config/nvim/lua/plugins.lua' -c q
-  - nvim --headless -u .config/nvim/lua/plugins.lua -c 'autocmd User PackerComplete quitall' -c 'PackerSync';
-  - nvim --headless -c "LspInstall --sync pylsp" -c q
-  - ~/.local/share/nvim/lsp_servers/pylsp/venv/bin/pip install -U pip
-  - ~/.local/share/nvim/lsp_servers/pylsp/venv/bin/pip install pyls-flake8 pylsp-mypy python-lsp-black pyls-isort pyls-memestra pylsp-rope
+  - nvim --headless -c 'so .config/nvim/lua/plugins.lua' -c q
+  - mkdir ~/.config/nvim/lan_servers
+  - python -m venv ~/.config/nvim/lan_servers/.lan_servers_venv
+  - ~/.config/nvim/lan_servers/.lan_servers_venv/bin/pip install -U pip
+  - ~/.config/nvim/lan_servers/.lan_servers_venv/bin/pip install ty ruff
