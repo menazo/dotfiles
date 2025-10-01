@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$PATH
 #
 # Julia
-export PATH=$HOME/juliav1.7:$HOME/.julia/bin:$HOME/.emacs.d/bin:$PATH
+# export PATH=$HOME/juliav1.7:$HOME/.julia/bin:$HOME/.emacs.d/bin:$PATH
 
 # Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -16,14 +16,14 @@ export PATH=$HOME/.cargo/bin:$PATH
 
 # go
 # stable
-export PATH=/usr/local/go/bin:$PATH
+# export PATH=/usr/local/go/bin:$PATH
 # latest go dev version
-export PATH=$HOME/go/bin:$PATH
+# export PATH=$HOME/go/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
 # ruby
-export PATH=/usr/bin/gem:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH=/usr/bin/gem:$PATH
+# export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -31,12 +31,12 @@ export ZSH_CUSTOM="$HOME/Projects/dotfiles/.oh-my-zsh/custom"
 
 
 # X11
-export PATH=/opt/X11/bin:$PATH
+# export PATH=/opt/X11/bin:$PATH
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="cloud"
+# ZSH_THEME="cloud"
 # use below, if not using alacritty and installed xterm-256color-italic.terminfo
 if ! { [ "$TERM" = "xterm-256color-italic" ] && [ -n "$TMUX" ]; } then
  export TERM="xterm-256color-italic"
@@ -132,7 +132,8 @@ export EDITOR='/usr/local/bin/nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias pc="pre-commit run"
 alias ccc="cz c"
 alias lc="colorls --sd -A"
